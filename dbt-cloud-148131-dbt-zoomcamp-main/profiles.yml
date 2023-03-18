@@ -1,0 +1,22 @@
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: original-folio-375016
+      dataset: dbt_ftalat
+      threads: 8
+
+      # These fields come from the service account json keyfile
+      keyfile_json:
+        type: "service_account"
+        project_id: "original-folio-375016"
+        private_key_id: "5c89164a9a3ea2957e860f1cd3b530fb06821a39"
+        private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC395Sbg18dqHqb\nYn/R28I4+sHQFE7iR+erxSazgq30pv/KsByZ4YwLlPYQQPauN9aX/79Tn6RSxPip\nVBbJiMkkaWo7CbOk4TdxfZ5FO+Eib9qDO0ZjzfeP7a3k7+WunjRAbx83uA9glza1\ni0FxPDvSa/UPXnfcgvUi3cqrpSvGsW/IrMHrsWluteRyPrzVSjUG9G4Ku0lRLPmd\nK6rT971KolSJIqeBrk+PBudy2j+dTR2dvyPj5f/U4OVGRSGJuUzWGOR/ZUgCJR+o\nhyxaYnoOuocF78x2dU17Yhg6FTckkkzI+/UJNwuLszoP/g/0zRxzZhHq1SA2tifU\nfRx1XxXNAgMBAAECggEAH8sps3Oxl0hUAjE0enISn7LUlo+/71Lyeqjsrpbt1eub\npu2nT7/famwA15/GkibjzyqbqAndxhE1EVyPQJ7DdmfCfHgJhDwJDzPgy8HUv5UZ\nrFbs7Bg/SfBPfpKoPPSp/p3FxSUqAS04/wiVU4rPoubV+CVBLUqzr2Yp3d7CkUiz\nFGh+AudWTMH0Hc6x6EZlzU430BLFwqo3RAcB7CdxyCmrw0HMHlF0OIPaaW97n3n5\n7pSOQ4yt1CEujDLap/5BE+jBqmkDh8zcUvCEqQD1A9ZiWrM9yVeypT2CmU4BsJt0\n/TP+pYwTnWvY+Bzz9hdZORZFx4aXvmN6S4OaqMBVEQKBgQDzHKWfxkjw5C/XK8pV\nc5bmlMgfsmXt0eR9iEpl6/glZgiT+jid3lZFTUYyhAmojyDXgDAfSYcKoRxGiu/j\nrLZ+1HCxALQX0Tax/1ydtKv76hZ0dkIakzU3XNrLLXWxJX7spNUF2ggvXHmuwd8y\n+zkvKGT/fTzv3t6ZNTF80Xev8QKBgQDBuEKAFAfBpAH6UTZIM84Zi9T6qKvtn3VI\nvY4iFtycqlDZlhsmVbV0aknWQlmQkFIcwHoNWng9xu6Jq0gofZdp5CopvPruBuS3\nxGT0LTeOtavWdawc7jrTcweSsP2jyKJztKHlAbO5c0l4Ue+8Ts9bvxzUqRBu1s5H\nxQm49UofnQKBgQDdY4wMOQS5ogNS/kTOlmmn53trKgmajhZ2nsOplz6tyAItx6MB\nWLTVfW5cmFM3VcgBl3G7PDkm29qk/udAPUsfqpRJDCv0uIgHhlWwJBSuXtk+C2dd\nTgsbNIrmlapkvJGeLOj04D2t65fAJjr88Tx9DlsTMthoVFv/xyoe0Z4d8QKBgQCk\nJKgcdFx6JKkUXDn9hf/tv4FQfxlnOEUdxJgppGt8SAhHxhvtKJSfNuynowLXLqKV\nADarF+xolCZM+pgizwA8VnuvcBTDGY41dDECgUnhH2iiSIT04ptvzbkt/9B7NicI\nmZbQP9f0nI41aGAVlEW5fL9GJpbpBBQ31eo+EYGkNQKBgQDNZ7XS3DbBsPRjcp2m\n6nLsG0SWgt2HvJ7wJwsHw6TibBKh1LBEpEIfe3dpnYbd100beUyY9UFtCLJ4MZHj\nRmfE/5jqoPyacfwGgupYGdo+pd9MoXOLYbYkItiFdSuj1L7w0udGaN5JLW8oZYJm\nIfZdG6ZYRFyUZl5426HV9r3uDw==\n-----END PRIVATE KEY-----\n"
+        client_email: "de-23-user@original-folio-375016.iam.gserviceaccount.com"
+        client_id: "111504875932504174408"
+        auth_uri: "https://accounts.google.com/o/oauth2/auth"
+        token_uri: "https://oauth2.googleapis.com/token"
+        auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+        client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/de-23-user%40original-folio-375016.iam.gserviceaccount.com"
